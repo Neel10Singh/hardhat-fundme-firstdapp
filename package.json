@@ -1,0 +1,25 @@
+{
+  "name": "hardhat-project",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.3",
+    "@nomicfoundation/hardhat-ethers": "^3.0.5",
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@typechain/hardhat": "^9.1.0",
+    "hardhat": "^2.19.3",
+    "hardhat-deploy": "^0.11.45",
+    "hardhat-gas-reporter": "^1.0.9",
+    "solidity-coverage": "^0.8.5"
+  },
+  "dependencies": {
+    "@chainlink/contracts": "^0.8.0",
+    "dotenv": "^16.3.1",
+    "solhint": "^4.0.0"
+  },
+  "scripts": {
+    "test":"npx hardhat test",
+    "tests:staging":"npx hardhat test --network sepolia",
+    "format":"npx prettier --write .",
+    "coverage":"npx hardhat coverage"
+
+  }
+}
